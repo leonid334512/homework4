@@ -53,7 +53,6 @@ public class Main {
         }
 
         // Задача 6
-
         int mest = 102;
         int sedentary = 60;
         int standing = mest - sedentary;
