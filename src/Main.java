@@ -54,15 +54,13 @@ public class Main {
 
         // Задача 6
 
-
-        int sedentary = 51;
-        int standing = 40;
-        if (sedentary < 60 && standing < 42) {
-            System.out.println("В вагоне есть и стоячее и сидячее места");
-        } else if (sedentary < 60 && standing >= 42) {
-            System.out.println("В вагоне есть только сидячие места");
-        } else if (sedentary >= 60 && standing < 42) {
-            System.out.println("В вогоне есть только стоячии места");
+        int mest = 102;
+        int sedentary = 60;
+        int standing = mest - sedentary;
+        if (sedentary < 60 && standing > 42) {
+            System.out.println("В вагоне есть и стоячие и сидячие места");
+        } else if (sedentary > 60 && standing < 42) {
+            System.out.println("В вогоне есть только стоячие места");
         } else if (sedentary >= 60 && standing >= 42) {
             System.out.println("В вогонет нет свободных мест");
         }
